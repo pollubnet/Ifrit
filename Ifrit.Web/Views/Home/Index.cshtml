@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Ifrit.Web.Models.IotData>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<canvas id="myChart" width="400" height="200"></canvas>
+<script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [ @foreach (var d in Model)
+            {
+                @Html.Raw(string.Format("\"{0}\",", d.Time))
+            }],
+            datasets: [{
+                label: 'Light Data',
+                fill: true,
+                borderColor: "rgba(75,192,192,1)",
+                backgroundColor: "rgba(75,192,192,0.4)",
+                // wypełnianie danymi
+                data: [
+                    @foreach (var d in Model)
+                    {
+                        @string.Format(System.Globalization.CultureInfo.InvariantCulture, "{0},", d.Data)
+                    }
+                ]
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
