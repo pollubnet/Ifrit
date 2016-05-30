@@ -43,7 +43,7 @@ namespace Ifrit.Web
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<streamresultContext>(options => options.UseSqlServer(@"CONNECTIONSTRINGGOESHERE"));
+            services.AddDbContext<streamresultContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StreamSQL")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
