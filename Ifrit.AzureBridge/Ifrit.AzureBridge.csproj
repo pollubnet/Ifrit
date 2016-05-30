@@ -48,28 +48,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetty.Buffers, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Buffers-signed.0.2.3\lib\net45\DotNetty.Buffers.dll</HintPath>
+    <Reference Include="DotNetty.Buffers, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Buffers-signed.0.3.0\lib\net45\DotNetty.Buffers.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotNetty.Codecs, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Codecs-signed.0.2.3\lib\net45\DotNetty.Codecs.dll</HintPath>
+    <Reference Include="DotNetty.Codecs, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Codecs-signed.0.3.0\lib\net45\DotNetty.Codecs.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotNetty.Codecs.Mqtt, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Codecs.Mqtt-signed.0.2.3\lib\net45\DotNetty.Codecs.Mqtt.dll</HintPath>
+    <Reference Include="DotNetty.Codecs.Mqtt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Codecs.Mqtt-signed.0.3.0\lib\net45\DotNetty.Codecs.Mqtt.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotNetty.Common, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Common-signed.0.2.3\lib\net45\DotNetty.Common.dll</HintPath>
+    <Reference Include="DotNetty.Common, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Common-signed.0.3.0\lib\net45\DotNetty.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotNetty.Handlers, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Handlers-signed.0.2.3\lib\net45\DotNetty.Handlers.dll</HintPath>
+    <Reference Include="DotNetty.Handlers, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Handlers-signed.0.3.0\lib\net45\DotNetty.Handlers.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotNetty.Transport, Version=0.2.3.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetty.Transport-signed.0.2.3\lib\net45\DotNetty.Transport.dll</HintPath>
+    <Reference Include="DotNetty.Transport, Version=0.3.0.0, Culture=neutral, PublicKeyToken=e7a0210a354f294a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetty.Transport-signed.0.3.0\lib\net45\DotNetty.Transport.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Amqp, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -77,7 +77,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Devices.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.Devices.Client.1.0.7\lib\net45\Microsoft.Azure.Devices.Client.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Azure.Devices.Client.1.0.11\lib\net45\Microsoft.Azure.Devices.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
@@ -94,6 +98,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
