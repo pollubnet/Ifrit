@@ -18,22 +18,8 @@ namespace Ifrit.Web.Controllers
 
         public IActionResult Index()
         {
-            return View(context.iotdata.OrderByDescending(x => x.Time).ToList());
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
+            return View(context.iotdata.OrderByDescending(x => x.Time).Take(50).ToList());
+        }        
 
         public IActionResult Error()
         {
