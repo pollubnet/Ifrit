@@ -31,15 +31,21 @@ namespace Ifrit.UWP
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            // wykonaj odczyt z sensora światła
             var ls = Windows.Devices.Sensors.LightSensor.GetDefault();
 
+            // otwórz połączenie i wykonaj 10 razy odczyt i wysłanie danych, co sekundę
             await IoTClient.Start();
             for (int i = 0; i < 10; i++)
-            {                
+            {
+                // pobierz odczyt, wyślij go do Azure przez przykładową klasę IoTClient
                 reading.Text = ls.GetCurrentReading().IlluminanceInLux.ToString();
                 await IoTClient.SendEvent(ls.GetCurrentReading().IlluminanceInLux.ToString());
                 await Task.Delay(1000);
             }
+
+            // ten kod powyżej jest znacząco skopany - nie aktualizuje on interfejsu użytkownika
+            // odpowiednio, więc wydaje się, że aplikacja się zawiesza
         }
     }
 }
